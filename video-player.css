@@ -1,0 +1,182 @@
+.video-player{
+    display: inline-block;
+    flex: 2;
+    min-width: 20%;
+}
+.video-title{
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+.video-channel-details{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 15px;
+}
+.channel-icon img{
+    border-radius: 50%;
+    width: 100%;
+}
+.channel-icon{
+    width: 40px;
+    height: 40px;
+}
+.channel-characters{
+    display: flex;
+    align-items: center;
+}
+.channel-name{
+    line-height: 3px;
+    margin: 0px 20px 0px 10px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#subscriber-number{
+    font-weight: 500;
+    font-size: 12px;
+    color: rgb(107, 107, 107);
+}
+.subscribe-button{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    padding: 8px 13px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.video-engagements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+}
+
+.like-dislike{
+    margin-right: 10px;
+    border-radius: 30px;
+    padding: 8px 12px 8px 12px;
+    display: flex;
+    align-items: center;
+    margin: 0px 0px;
+}
+
+.dislike img{
+    width: 18px;
+    height: 20px;
+    margin-right: 8px;    
+}
+.like{
+    width: 18px;
+    height: 20px;
+    margin-right: 8px;
+}
+.like-and-number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(182, 182, 182, 0.3);
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    padding: 6px 19px;
+}
+.like-number{
+    display: inline-block;
+    margin: 10px 20px 4px 5px;
+}
+.dislike{
+    display: inline-block;
+    background-color: rgba(182, 182, 182, 0.3);
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 12px 20px;
+}
+
+.share{
+    background-color: rgba(182, 182, 182, 0.3);
+    border-radius: 20px;
+    padding: 12px 15px 12px 15px;
+    position: relative;
+}
+
+.share img{
+    width: 20px;
+    display: inline-block;
+    margin: 0px 10px 0px 0px;
+}
+.download-icon{
+    background-color: rgba(182, 182, 182, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 5px 15px 8px 12px;
+    margin: 0px 10px;
+    border: none;   
+    position: relative;
+}
+.dislike, .download-icon,
+.like-and-number, .share{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.tooltip{
+    background-color: rgb(100, 100, 100);
+    position: absolute;
+    bottom: -55px;
+    padding: 10px;
+    border-radius: 4px;
+    color: rgb(240, 240, 240);
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+}
+.download-icon:hover .tooltip, .share:hover .tooltip,
+.dislike:hover .tooltip,
+.like-and-number:hover .tooltip{
+    opacity: 1;
+}
+.dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(182, 182, 182, 0.3);
+    border: none;
+}
+.download-icon:hover, .share:hover, 
+.dislike:hover, .like-and-number:hover,
+.dropdown:hover{
+    background-color: rgba(182, 182, 182, 0.7);
+    transition: opacity 0.15s;
+}
+.download-icon img{
+    width: 30px;
+    display: inline-block;
+    opacity: 0.8;
+}
+.dropdown img{
+    width: 40px;
+}
+.video-description{
+    background-color: rgba(182, 182, 182, 0.295);
+    padding: 10px 12px;
+    font-size: 15px;
+    justify-content: center;
+    line-height: 23px;
+    border-radius: 15px;
+}
+.video-date{
+    font-weight: 600;
+}
