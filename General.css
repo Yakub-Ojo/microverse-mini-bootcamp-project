@@ -1,0 +1,8 @@
+body{
+    height: 3000px;
+    padding: 70px 10px 10px 15px;
+    font-family: Roboto, Arial;
+}
+.flex{
+    display: flex;
+}
