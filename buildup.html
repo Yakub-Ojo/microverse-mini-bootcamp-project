@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="General.css">
+    <link rel="stylesheet" href="video-player.css">
+    <link rel="stylesheet" href="video-previews.css">
     <title>YouTube video player page</title>
 </head>
 <body>
@@ -26,9 +32,288 @@
         </div>
     </header>
     <main>
-        <section class="video-player"></section>
-        <section class="comments"></section>
-        <section class="video-previews"></section>
+        <div class="flex">
+            <section class="video-player">
+            <div class="embeded-video">
+                <iframe width="890" height="605" src="https://www.youtube.com/embed/V74l_zS1x8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            
+            <div class="video-details">
+                <div class="video-title">
+                    Contributing to Open Source Part I: The Easy Way
+                </div>
+                <div class="video-channel-details">
+                    <div class="channel-characters">
+                        <div class="channel-icon">
+                            <img src="images/unnamed.jpg" alt="">
+                        </div>
+                        <div class="channel-name">
+                            <p>The Odin Project</p>
+                            <p id="subscriber-number">1.11K subscribers</p>
+                        </div>
+                        <button class="subscribe-button">Subscribe</button>
+                    </div>
+                    <div class="video-engagements">
+                        <div class="like-dislike">
+                            <div class="like-and-number">
+                                <img class="like" src="images/like-icon.png" alt="">
+                                <div class="like-number"> 491</div>
+                                <div class="tooltip">Like</div>
+                            </div>
+                            
+                            <div class="dislike">
+                                <img  src="images/dislike-icon.png" alt="">
+                                <div class="tooltip">I don't like this</div>
+                            </div>
+                        </div>
+                        <div class="share">
+                            <img src="images/share-icon.png" alt="">
+                            <div>Share</div>
+                            <div class="tooltip">Share</div>
+                        </div>
+                        <button class="download-icon">
+                            <img src="images/Download-Icon.png" alt="">
+                            <div>Download</div>
+                            <div class="tooltip">download</div>
+                        </button>
+
+                        <button class="dropdown"><img src="images/show-more-icon.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="video-description">
+                    <span class="video-date">69,563 views  Feb 28, 2014</span> <br>
+                    How do you contribute to open source?  In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github.  I'll also describe what kinds of contributions open source software projects are typically looking for.  As an example, I use submitting a student solution to a web development exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails.  You can find more information about that project at http://theodinproject.com.
+                </div>
+            </div>
+            </section>
+            <section class="video-previews">
+            <div class="header-tabs">
+                <button id="all-button">All</button>
+                <button>Listenable</button>
+                <button>Recently uploaded</button>
+                <button>Watched</button>
+            </div>
+            <div class="thumbnails">
+                <div>
+                    <div class="thumbnail-video">
+                        <img class="thumbnail-image"src="Thumbnail/thumbnail1.webp" alt="thumbnail1">
+                    </div>
+                    <div class="thumbnail-video-details">
+                        <div class="video-thumbnail-title">
+                            ONE-ON-ONE CHAT WITH RHODES-VIVOUR
+                        </div>
+                        <div class="video-thumbnail-channel">
+                            Channels Television
+                        </div>
+                        <div class="video-thumbnail-engagement">
+                            <div class="video-thumbnail-views">222k views</div>
+                            <div>&#x2022</div>
+                            <div class="video-thumbnail-likes">3 days ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="thumbnail-video">
+                        <img class="thumbnail-image"src="Thumbnail/thumbnail2.webp" alt="thumbnail1">
+                    </div>
+                    <div class="thumbnail-video-details">
+                        <div class="video-thumbnail-title">
+                            ONE-ON-ONE CHAT WITH RHODES-VIVOUR
+                        </div>
+                        <div class="video-thumbnail-channel">
+                            Channels Television
+                        </div>
+                        <div class="video-thumbnail-engagement">
+                            <div class="video-thumbnail-views">222k views</div>
+                            <div>&#x2022</div>
+                            <div class="video-thumbnail-likes">3 days ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="thumbnail-video">
+                        <img class="thumbnail-image"src="Thumbnail/thumbnail3.webp" alt="thumbnail1">
+                    </div>
+                    <div class="thumbnail-video-details">
+                        <div class="video-thumbnail-title">
+                            ONE-ON-ONE CHAT WITH RHODES-VIVOUR
+                        </div>
+                        <div class="video-thumbnail-channel">
+                            Channels Television
+                        </div>
+                        <div class="video-thumbnail-engagement">
+                            <div class="video-thumbnail-views">222k views</div>
+                            <div>&#x2022</div>
+                            <div class="video-thumbnail-likes">3 days ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="thumbnail-video">
+                        <img class="thumbnail-image"src="Thumbnail/thumbnail1.webp" alt="thumbnail1">
+                    </div>
+                    <div class="thumbnail-video-details">
+                        <div class="video-thumbnail-title">
+                            ONE-ON-ONE CHAT WITH RHODES-VIVOUR
+                        </div>
+                        <div class="video-thumbnail-channel">
+                            Channels Television
+                        </div>
+                        <div class="video-thumbnail-engagement">
+                            <div class="video-thumbnail-views">222k views</div>
+                            <div>&#x2022</div>
+                            <div class="video-thumbnail-likes">3 days ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="thumbnail-video">
+                        <img class="thumbnail-image"src="Thumbnail/thumbnail1.webp" alt="thumbnail1">
+                    </div>
+                    <div class="thumbnail-video-details">
+                        <div class="video-thumbnail-title">
+                            ONE-ON-ONE CHAT WITH RHODES-VIVOUR
+                        </div>
+                        <div class="video-thumbnail-channel">
+                            Channels Television
+                        </div>
+                        <div class="video-thumbnail-engagement">
+                            <div class="video-thumbnail-views">222k views</div>
+                            <div>&#x2022</div>
+                            <div class="video-thumbnail-likes">3 days ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="thumbnail-video">
+                        <img class="thumbnail-image"src="Thumbnail/thumbnail1.webp" alt="thumbnail1">
+                    </div>
+                    <div class="thumbnail-video-details">
+                        <div class="video-thumbnail-title">
+                            ONE-ON-ONE CHAT WITH RHODES-VIVOUR
+                        </div>
+                        <div class="video-thumbnail-channel">
+                            Channels Television
+                        </div>
+                        <div class="video-thumbnail-engagement">
+                            <div class="video-thumbnail-views">222k views</div>
+                            <div>&#x2022</div>
+                            <div class="video-thumbnail-likes">3 days ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="thumbnail-video">
+                        <img class="thumbnail-image"src="Thumbnail/thumbnail1.webp" alt="thumbnail1">
+                    </div>
+                    <div class="thumbnail-video-details">
+                        <div class="video-thumbnail-title">
+                            ONE-ON-ONE CHAT WITH RHODES-VIVOUR
+                        </div>
+                        <div class="video-thumbnail-channel">
+                            Channels Television
+                        </div>
+                        <div class="video-thumbnail-engagement">
+                            <div class="video-thumbnail-views">222k views</div>
+                            <div>&#x2022</div>
+                            <div class="video-thumbnail-likes">3 days ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="thumbnail-video">
+                        <img class="thumbnail-image"src="Thumbnail/thumbnail1.webp" alt="thumbnail1">
+                    </div>
+                    <div class="thumbnail-video-details">
+                        <div class="video-thumbnail-title">
+                            ONE-ON-ONE CHAT WITH RHODES-VIVOUR
+                        </div>
+                        <div class="video-thumbnail-channel">
+                            Channels Television
+                        </div>
+                        <div class="video-thumbnail-engagement">
+                            <div class="video-thumbnail-views">222k views</div>
+                            <div>&#x2022</div>
+                            <div class="video-thumbnail-likes">3 days ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="thumbnail-video">
+                        <img class="thumbnail-image"src="Thumbnail/thumbnail1.webp" alt="thumbnail1">
+                    </div>
+                    <div class="thumbnail-video-details">
+                        <div class="video-thumbnail-title">
+                            ONE-ON-ONE CHAT WITH RHODES-VIVOUR
+                        </div>
+                        <div class="video-thumbnail-channel">
+                            Channels Television
+                        </div>
+                        <div class="video-thumbnail-engagement">
+                            <div class="video-thumbnail-views">222k views</div>
+                            <div>&#x2022</div>
+                            <div class="video-thumbnail-likes">3 days ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="thumbnail-video">
+                        <img class="thumbnail-image"src="Thumbnail/thumbnail1.webp" alt="thumbnail1">
+                    </div>
+                    <div class="thumbnail-video-details">
+                        <div class="video-thumbnail-title">
+                            ONE-ON-ONE CHAT WITH RHODES-VIVOUR
+                        </div>
+                        <div class="video-thumbnail-channel">
+                            Channels Television
+                        </div>
+                        <div class="video-thumbnail-engagement">
+                            <div class="video-thumbnail-views">222k views</div>
+                            <div>&#x2022</div>
+                            <div class="video-thumbnail-likes">3 days ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="thumbnail-video">
+                        <img class="thumbnail-image"src="Thumbnail/thumbnail1.webp" alt="thumbnail1">
+                    </div>
+                    <div class="thumbnail-video-details">
+                        <div class="video-thumbnail-title">
+                            ONE-ON-ONE CHAT WITH RHODES-VIVOUR
+                        </div>
+                        <div class="video-thumbnail-channel">
+                            Channels Television
+                        </div>
+                        <div class="video-thumbnail-engagement">
+                            <div class="video-thumbnail-views">222k views</div>
+                            <div>&#x2022</div>
+                            <div class="video-thumbnail-likes">3 days ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            </section>
+        </div>
+        
+        <section class="comments">
+            <div class="comments-head">
+                <div class="comments-number"></div>
+                <div class="sort"></div>
+            </div>
+            
+        </section>
     </main>
 </body>
 </html>
