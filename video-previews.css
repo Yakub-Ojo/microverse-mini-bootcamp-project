@@ -22,24 +22,30 @@
 .thumbnails{
     display: grid;
 }
+.thumbnails div{
+    margin-bottom: 3px;
+}
 .thumbnail-video{
     display: inline-block;
     vertical-align: top;
+    height: auto;
 }
 .thumbnail-image{
     display: inline-block;
     border-radius: 8px;
+    
 }
 .thumbnail-video-details{
     display: inline-block;
     width: 200px;
     margin: 0px 5px;
+    height: auto;
 }
-.thumbnail-video-title{
+.video-thumbnail-title{
     display: inline-block;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 .video-thumbnail-engagement{
     display: flex;
